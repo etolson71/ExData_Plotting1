@@ -18,7 +18,7 @@ elect1 <- elect1[,-c(1,2)]  #Remove unneeded Date and Time fields
 
 #####################Make Plot 4###########################
 dev.copy(png,'plot4.png')
-par(mfrow=c(2,2),mar=c(4,4,2,1))
+par(mfrow=c(2,2))
 
 #Plot for top left
 plot(elect1$datetm,elect1$Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)")
